@@ -1,0 +1,138 @@
+body, p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: #222222;
+}
+
+.app .cont-header{
+    width: 100vw;
+    height: 350px;
+    background-image: url('images/cover.png');
+    /* background-position: center; */
+    background-position-y: -260px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-header .txt-header{
+    margin-top: auto;
+    color: white;
+}
+
+.cont-header .tit-header{
+    margin: 10px 0;
+    /* font-weight: 600; */
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.cont-header .tit-header::before{
+    content: '';
+    display: inline-block;
+    background-color: dodgerblue;
+    width: 280px;
+    height: 2px;
+    position: absolute;
+    margin: 10px auto;
+    margin-left: -12px;
+    border-radius: 2px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.list-wrap{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 60px;
+    box-sizing: border-box;
+    
+}
+.list-wrap::after{
+    content: '';
+    background-color: dodgerblue;
+    width: 3px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* margin-top: 100px; */
+}
+
+.list-wrap .cont-list{
+    background-color: #111111;
+    border-radius: 20px;
+}
+
+.list-wrap .cont-list:nth-child(odd){
+    margin-right: 50%;
+}
+
+.list-wrap .cont-list:nth-child(even){
+    margin-left: 50%;
+}
+
+.cont-list .year{
+    color: #1F88F0;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-size: 45px;
+}
+
+.cont-list .list-name {
+    color: white;
+}
+
+.cont-list.left .list-img{
+    width: 80px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+/* .cont-list.left .year,
+.cont-list.left .list-name{
+    float: right;
+} */
+.year-name{
+    float: right;
+}
+.cont-list.right .list-img{
+    float: right;
+    width: 80px;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+.cont-list .list-ul{
+    background-color: black;
+    margin: 0 20px ;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+.cont-list .list-li {
+    color: white;
+    background-color: black;
+    
+    /* margin-top: 20px; */
+    
+
+}
+
+/* .cont-list.right .year{
+    color: #1F88F0;
+    margin-top: 30px;
+} */
