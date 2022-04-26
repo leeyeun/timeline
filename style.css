@@ -61,6 +61,7 @@ body, p, h1 {
     box-sizing: border-box;
     
 }
+
 .list-wrap::after{
     content: '';
     background-color: dodgerblue;
@@ -74,28 +75,26 @@ body, p, h1 {
     /* margin-top: 100px; */
 }
 
-.list-wrap .cont-list{
+.cont-list{
     background-color: #111111;
     border-radius: 20px;
+    /* overflow: hidden; */
+    /* float: left; */
 }
 
-.list-wrap .cont-list:nth-child(odd){
+.cont-list:nth-child(odd){
     margin-right: 50%;
+    
 }
 
-.list-wrap .cont-list:nth-child(even){
+.cont-list:nth-child(even){
     margin-left: 50%;
 }
 
-.cont-list .year{
-    color: #1F88F0;
-    margin-top: 15px;
-    margin-right: 20px;
-    font-size: 45px;
-}
-
-.cont-list .list-name {
-    color: white;
+.cont-list::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .cont-list.left .list-img{
@@ -104,35 +103,46 @@ body, p, h1 {
     margin-left: 20px;
 }
 
-/* .cont-list.left .year,
-.cont-list.left .list-name{
-    float: right;
-} */
-.year-name{
+.cont-list.left .year-name{
+    margin: 20px;
     float: right;
 }
+
+.cont-list .year{
+    color: #1F88F0;
+    font-size: 45px;
+}
+
+.cont-list .list-name {
+    color: white;
+}
+
 .cont-list.right .list-img{
     float: right;
     width: 80px;
     margin-top: -40px;
     margin-right: 20px;
 }
+
 .cont-list .list-ul{
     background-color: black;
     margin: 0 20px ;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
 }
-.cont-list .list-li {
-    color: white;
-    background-color: black;
-    
-    /* margin-top: 20px; */
-    
 
+.cont-list .list-li {
+    color: #4A4A4A;
+    background-color: black;
 }
 
-/* .cont-list.right .year{
-    color: #1F88F0;
-    margin-top: 30px;
-} */
+.cont-list .list-li::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #4A4A4A;
+    vertical-align: middle;
+    margin-right: 10px;
+}
