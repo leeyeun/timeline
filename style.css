@@ -1,6 +1,7 @@
 .app {
     width: 100vw;
     background-color: #222222;
+    
 }
 
 .app .cont-header{
@@ -53,14 +54,15 @@
     position: relative;
     margin-top: 100px;
     box-sizing: border-box;
+    padding-bottom: 200px;
 }
 
-.list-wrap::after{
+.list-wrap::before{
     content: '';
     background-color: dodgerblue;
     width: 3px;
     position: absolute;
-    margin: 98px auto;
+    margin: 98px auto 0;
     left: 0;
     right: 0;
     top: 0;
@@ -119,6 +121,7 @@
     display: block;
     position: absolute;
     border: solid 3px #1F88F0;
+    background-color: #222222;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -129,6 +132,7 @@
     display: block;
     position: absolute;
     border: solid 3px #1F88F0;
+    background-color: #222222;
     width: 8px;
     height: 8px;
     border-radius: 50%;
